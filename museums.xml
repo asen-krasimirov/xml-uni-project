@@ -2,7 +2,7 @@
 <!DOCTYPE catalogue SYSTEM "museums.dtd">
 <?xml-stylesheet type="text/xsl" href="museums.xsl"?>
 
-<catalogue>
+<catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="museums.xsd">
     <regions>
         <region regionId="SOF">
             <name>София</name>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root Element -->
+    <xs:element name="catalogue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="regions" type="RegionsType"/>
+                <xs:element name="museum-types" type="MuseumTypesType"/>
+                <xs:element name="museums" type="MuseumsType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Regions -->
+    <xs:complexType name="RegionsType">
+        <xs:sequence>
+            <xs:element name="region" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="regionId" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Museum Types -->
+    <xs:complexType name="MuseumTypesType">
+        <xs:sequence>
+            <xs:element name="type" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="typeId" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Museums -->
+    <xs:complexType name="MuseumsType">
+        <xs:sequence>
+            <xs:element name="museum" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="description" type="xs:string"/>
+                        <xs:element name="images">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="image" type="xs:string" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="additionalInfo">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="phone" type="xs:string"/>
+                                    <xs:element name="workingHours" type="xs:string"/>
+                                    <xs:element name="address" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="museumId" type="xs:string" use="required"/>
+                    <xs:attribute name="regionRef" type="xs:string" use="required"/>
+                    <xs:attribute name="typeRef" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

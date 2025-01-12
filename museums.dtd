@@ -45,3 +45,7 @@
 
 <!ENTITY pmb_image1 "images/pmb1.jpg">
 <!ENTITY pmb_image2 "images/pmb2.jpg">
+
+<!ATTLIST catalogue
+    xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation CDATA #FIXED "museums.xsd">
