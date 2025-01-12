@@ -15,3 +15,28 @@ function filterMuseums() {
         }
     }
 }
+
+function sortMuseums() {
+    var table = document.getElementById('museumTable');
+    var rows = Array.from(document.getElementsByClassName('museumRow'));
+    var sortButton = document.getElementById('sortName');
+    var sortDirection = sortButton.getAttribute('data-sort');
+
+    rows.sort(function(a, b) {
+        var nameA = a.getElementsByTagName('td')[0].innerText.toLowerCase();
+        var nameB = b.getElementsByTagName('td')[0].innerText.toLowerCase();
+        
+        if (sortDirection === 'asc') {
+            return nameA.localeCompare(nameB);
+        } else {
+            return nameB.localeCompare(nameA);
+        }
+    });
+
+    var newSortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+    sortButton.setAttribute('data-sort', newSortDirection);
+    
+    sortButton.innerHTML = 'Сортирай по име ' + (newSortDirection === 'asc' ? '▲' : '▼');
+
+    rows.forEach(row => table.appendChild(row));
+}

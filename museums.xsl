@@ -10,7 +10,6 @@
             <body>
                 <h2>Каталог на музеи</h2>
 
-                <!-- Filter Section -->
                 <div class="filter-container">
                     <label for="regionFilter">Филтър по регион:</label>
                     <select id="regionFilter" onchange="filterMuseums()">
@@ -37,9 +36,11 @@
                             </option>
                         </xsl:for-each>
                     </select>
+
+                    <button id="sortName" data-sort="asc" onclick="sortMuseums()">Сортирай по име ▲</button>
                 </div>
 
-                <table>
+                <table id="museumTable">
                     <tr>
                         <th>Име</th>
                         <th>Описание</th>
