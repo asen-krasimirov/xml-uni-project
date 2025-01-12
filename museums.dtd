@@ -34,5 +34,14 @@
 <!ENTITY em_image1 "images/em1.jpg">
 <!ENTITY em_image2 "images/em2.jpg">
 
-<!ENTITY rm_image1 "images/rm1.jpg">
-<!ENTITY rm_image2 "images/rm2.jpg">
+<!ENTITY vnm_image1 "images/vnm1.jpg">
+<!ENTITY vnm_image2 "images/vnm2.jpg">
+
+<!ENTITY rhm_image1 "images/rhm1.jpg">
+<!ENTITY rhm_image2 "images/rhm2.jpg">
+
+<!ENTITY soc_image1 "images/soc1.jpg">
+<!ENTITY soc_image2 "images/soc2.jpg">
+
+<!ENTITY pmb_image1 "images/pmb1.jpg">
+<!ENTITY pmb_image2 "images/pmb2.jpg">
