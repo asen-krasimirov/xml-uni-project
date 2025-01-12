@@ -1,0 +1,39 @@
+<!ELEMENT catalogue (regions, museum-types, museums)>
+<!ELEMENT regions (region+)>
+<!ELEMENT region (name)>
+<!ATTLIST region regionId ID #REQUIRED>
+
+<!ELEMENT museum-types (type+)>
+<!ELEMENT type (name)>
+<!ATTLIST type typeId ID #REQUIRED>
+
+<!ELEMENT museums (museum+)>
+<!ELEMENT museum (name, description, images, additionalInfo)>
+<!ATTLIST museum museumId ID #REQUIRED>
+<!ATTLIST museum regionRef IDREF #REQUIRED>
+<!ATTLIST museum typeRef IDREF #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT images (image+)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT additionalInfo (phone, workingHours, address)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT workingHours (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+
+<!ENTITY nhm_image1 "images/nhm1.jpg">
+<!ENTITY nhm_image2 "images/nhm2.jpg">
+
+<!ENTITY nag_image1 "images/nag1.jpg">
+<!ENTITY nag_image2 "images/nag2.jpg">
+
+<!ENTITY am_image1 "images/am1.jpg">
+<!ENTITY am_image2 "images/am2.jpg">
+
+<!ENTITY em_image1 "images/em1.jpg">
+<!ENTITY em_image2 "images/em2.jpg">
+
+<!ENTITY rm_image1 "images/rm1.jpg">
+<!ENTITY rm_image2 "images/rm2.jpg">
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogue SYSTEM "museums.dtd">
+<?xml-stylesheet type="text/xsl" href="museums.xsl"?>
+
+<catalogue>
+    <regions>
+        <region regionId="SOF">
+            <name>София</name>
+        </region>
+        <region regionId="PLD">
+            <name>Пловдив</name>
+        </region>
+        <region regionId="VAR">
+            <name>Варна</name>
+        </region>
+        <region regionId="BURG">
+            <name>Бургас</name>
+        </region>
+    </regions>
+
+    <museum-types>
+        <type typeId="NAT">
+            <name>Национален</name>
+        </type>
+        <type typeId="ART">
+            <name>Художествен</name>
+        </type>
+        <type typeId="ARC">
+            <name>Археологически</name>
+        </type>
+        <type typeId="ETH">
+            <name>Етнографски</name>
+        </type>
+    </museum-types>
+
+    <museums>
+        <museum museumId="NHM" regionRef="SOF" typeRef="NAT">
+            <name>Национален исторически музей</name>
+            <description>Националният исторически музей (НИМ) в София представя богатата история на България...</description>
+            <images>
+                <image>&nhm_image1;</image>
+                <image>&nhm_image2;</image>
+            </images>
+            <additionalInfo>
+                <phone>02 955 4280</phone>
+                <workingHours>10:00ч.–18:00ч.</workingHours>
+                <address>ул. "Витошко лале" 16, София</address>
+            </additionalInfo>
+        </museum>
+        
+        <museum museumId="NAG" regionRef="SOF" typeRef="ART">
+            <name>Национална художествена галерия</name>
+            <description>Националната художествена галерия в София съхранява най-значимите произведения на българското изобразително изкуство...</description>
+            <images>
+                <image>&nag_image1;</image>
+                <image>&nag_image2;</image>
+            </images>
+            <additionalInfo>
+                <phone>02 980 0073</phone>
+                <workingHours>10:00ч.–18:00ч.</workingHours>
+                <address>пл. "Княз Александър I" 1, София</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="AM" regionRef="PLD" typeRef="ARC">
+            <name>Археологически музей - Пловдив</name>
+            <description>Археологическият музей в Пловдив е дом на уникални артефакти от тракийската, римската и византийската епоха...</description>
+            <images>
+                <image>&am_image1;</image>
+                <image>&am_image2;</image>
+            </images>
+            <additionalInfo>
+                <phone>032 624 339</phone>
+                <workingHours>09:00ч.–17:30ч.</workingHours>
+                <address>ул. "Съборна" 1, Пловдив</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="VNM" regionRef="VAR" typeRef="ARC">
+            <name>Варненски археологически музей</name>
+            <description>Варненският археологически музей е дом на най-големият златен съкровищен намерен в света...</description>
+            <images>
+                <image>images/vnm1.jpg</image>
+                <image>images/vnm2.jpg</image>
+            </images>
+            <additionalInfo>
+                <phone>052 612 207</phone>
+                <workingHours>10:00ч.–18:00ч.</workingHours>
+                <address>ул. "Съборна" 41, Варна</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="RHM" regionRef="BURG" typeRef="ETH">
+            <name>Регионален исторически музей - Бургас</name>
+            <description>Регионалният исторически музей в Бургас представя богатата история на региона чрез уникални артефакти...</description>
+            <images>
+                <image>&rm_image1;</image>
+                <image>&rm_image2;</image>
+            </images>
+            <additionalInfo>
+                <phone>056 842 170</phone>
+                <workingHours>09:00ч.–17:30ч.</workingHours>
+                <address>ул. "Лермонтов" 31, Бургас</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="SOC" regionRef="SOF" typeRef="ETH">
+            <name>Музей на социализма</name>
+            <description>Музеят на социализма в София представя историята на социализма в България...</description>
+            <images>
+                <image>images/soc1.jpg</image>
+                <image>images/soc2.jpg</image>
+            </images>
+            <additionalInfo>
+                <phone>02 931 3119</phone>
+                <workingHours>10:00ч.–18:00ч.</workingHours>
+                <address>ул. "Цар Освободител" 2, София</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="EM" regionRef="PLD" typeRef="ETH">
+            <name>Етнографски музей - Пловдив</name>
+            <description>Разположен в красива възрожденска сграда, Етнографският музей в Пловдив е посветен на традиционната култура и бита на българите...</description>
+            <images>
+                <image>&em_image1;</image>
+                <image>&em_image2;</image>
+            </images>
+            <additionalInfo>
+                <phone>032 626 868</phone>
+                <workingHours>09:00ч.–17:30ч.</workingHours>
+                <address>ул. "Д-р Стоян Чомаков" 2, Пловдив</address>
+            </additionalInfo>
+        </museum>
+
+        <museum museumId="PMB" regionRef="BURG" typeRef="NAT">
+            <name>Природонаучен музей - Бургас</name>
+            <description>
+                Природонаучният музей в Бургас представя експозиция, свързана с флората и фауната на региона, 
+                включително редки видове растения и животни.
+            </description>
+            <images>
+                <!-- <image>&pmb_image1;</image> -->
+                <!-- <image>&pmb_image2;</image> -->
+                <image>images/pmb1.jpg</image>
+                <image>images/pmb2.jpg</image>
+            </images>
+            <additionalInfo>
+                <phone>056 844 901</phone>
+                <workingHours>10:00ч.–18:00ч.</workingHours>
+                <address>ул. "К. Фотинов" 30, Бургас</address>
+            </additionalInfo>
+        </museum>
+
+    </museums>
+</catalogue>
