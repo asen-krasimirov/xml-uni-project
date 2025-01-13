@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Root Element -->
     <xs:element name="catalogue">
         <xs:complexType>
             <xs:sequence>
@@ -12,7 +11,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Regions -->
     <xs:complexType name="RegionsType">
         <xs:sequence>
             <xs:element name="region" maxOccurs="unbounded">
@@ -26,7 +24,6 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- Museum Types -->
     <xs:complexType name="MuseumTypesType">
         <xs:sequence>
             <xs:element name="type" maxOccurs="unbounded">
@@ -40,7 +37,6 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- Museums -->
     <xs:complexType name="MuseumsType">
         <xs:sequence>
             <xs:element name="museum" maxOccurs="unbounded">
